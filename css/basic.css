@@ -1,1 +1,112 @@
 /* Denna fil får du editera för att lösa uppgiften. Du får INTE ändra i html-filen. */
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Colours:
+ background: #FCFAF4
+ Background content: #EAE7D2
+ Background navigation #51473D
+ Background menu #797066
+ Font color content #797066
+ borders color: #C0C0C0
+ mouse hover: #9C9084
+ active menu:#EAE7D2
+ border-bottom on menu: white
+*/
+
+/*Layout*/
+
+body{
+    background:#FCFAF4;
+    border:1;
+}
+#container{
+    border:solid;
+    border-width:1px;
+    border-color:black;
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#topbar{
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#51473D;
+    color:#EAE7D2;
+    padding-left:0;
+    padding-right:0;
+}
+
+#topbar::after{
+    content:"";
+    width:100%;
+    height:320px;
+    background:url("pics/coffey.jpg") no-repeat;
+    background-size:contain;
+    display:block;
+}
+#menu{
+    width:100%;
+    background-color:#51473D;
+}
+#menu li{
+    display:inline;
+    float:left;
+}
+#maincontent{
+    float:left;
+    width: 60%;
+    background-color:orange;
+}
+#subcontent{
+    margin-left:60%;
+    background-color:yellow;
+}
+#bottomcontent{
+    clear:both;
+    width:100%;
+    background-color:gray;
+}
+
+
+
